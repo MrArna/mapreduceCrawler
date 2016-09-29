@@ -14,9 +14,9 @@ public class PDFAnalizerTest {
     {
         PDFAnalizer analizer = new PDFAnalizer();
 
-        File dirs = new File("./../../");
-        String path = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "/test.pdf";
-                //PDFAnalizerTest.class.getResource("test.pdf").getFile();
+        //File dirs = new File("./../../");
+        //String path = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "/test.pdf";
+        String path = PDFAnalizerTest.class.getResource("test.pdf").toURI().getPath();
         PDF pdf = analizer.analyzePDF(path);
 
         //getting the content of the document
