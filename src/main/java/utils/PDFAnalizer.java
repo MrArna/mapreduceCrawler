@@ -1,3 +1,6 @@
+package utils;
+
+import models.PDF;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
@@ -27,7 +30,7 @@ public class PDFAnalizer
         FileInputStream inputstream = new FileInputStream(new File(path));
         ParseContext pcontext = new ParseContext();
 
-        //parsing the document using PDF parser
+        //parsing the document using models.PDF parser
         PDFParser pdfparser = new PDFParser();
         pdfparser.parse(inputstream, handler, metadata,pcontext);
 

@@ -1,5 +1,8 @@
+import models.PDF;
 import org.junit.Before;
 import org.junit.Test;
+import utils.NameFinder;
+import utils.PDFAnalizer;
 
 import static org.junit.Assert.*;
 

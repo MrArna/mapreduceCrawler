@@ -1,3 +1,5 @@
+package models;
+
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.sax.BodyContentHandler;
 

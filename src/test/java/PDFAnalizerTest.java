@@ -1,6 +1,6 @@
+import models.PDF;
 import org.junit.Test;
-
-import java.io.File;
+import utils.PDFAnalizer;
 
 import static org.junit.Assert.*;
 
@@ -20,10 +20,10 @@ public class PDFAnalizerTest {
         PDF pdf = analizer.analyzePDF(path);
 
         //getting the content of the document
-        System.out.println("Contents of the PDF :" + pdf.getContent().toString());
+        System.out.println("Contents of the models.PDF :" + pdf.getContent().toString());
 
         //getting metadata of the document
-        System.out.println("Metadata of the PDF:");
+        System.out.println("Metadata of the models.PDF:");
         String[] metadataNames = pdf.getMetadata().names();
 
         for(String name : metadataNames) {

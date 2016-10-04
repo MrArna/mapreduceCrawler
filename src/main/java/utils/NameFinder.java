@@ -1,3 +1,5 @@
+package utils;
+
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.sentdetect.SentenceDetectorME;
