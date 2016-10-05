@@ -16,6 +16,8 @@ libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "3
 libraryDependencies += "org.apache.tika" % "tika-java7" % "1.13"
 libraryDependencies += "org.apache.opennlp" % "opennlp-maxent" % "3.0.3"
 libraryDependencies += "org.apache.hadoop" % "hadoop-kafka" % "3.0.0-alpha1"
+libraryDependencies += "commons-cli" % "commons-cli" % "1.3.1"
+
 
 lazy val app = (project in file(".")).
   settings(commonSettings: _*).

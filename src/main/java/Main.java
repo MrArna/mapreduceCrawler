@@ -1,67 +1,66 @@
 /**
  * Created by Marco on 21/09/16.
  */
-import java.io.IOException;
-import java.util.StringTokenizer;
-
-
+import mapReduce.inputFormats.PDFInputFormat;
+import mapReduce.mappers.nameRefMapper;
+import mapReduce.reducers.nameRefReducer;
+import org.apache.commons.cli.*;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Text;
-
 public class Main {
 
-    public static class TokenizerMapper
-            extends Mapper<Object, Text, Text, IntWritable>{
-
-        private final static IntWritable one = new IntWritable(1);
-        private Text word = new Text();
-
-        public void map(Object key, Text value, Context context
-        ) throws IOException, InterruptedException {
-            StringTokenizer itr = new StringTokenizer(value.toString());
-            while (itr.hasMoreTokens()) {
-                word.set(itr.nextToken());
-                context.write(word, one);
-            }
-        }
-    }
-
-    public static class IntSumReducer
-            extends Reducer<Text,IntWritable,Text,IntWritable> {
-        private IntWritable result = new IntWritable();
-
-        public void reduce(Text key, Iterable<IntWritable> values,
-                           Context context
-        ) throws IOException, InterruptedException {
-            int sum = 0;
-            for (IntWritable val : values) {
-                sum += val.get();
-            }
-            result.set(sum);
-            context.write(key, result);
-        }
-    }
-
     public static void main(String[] args) throws Exception {
+
+
+        CommandLineParser parser = new DefaultParser();
+
+
+        Options options = new Options();
+        options.addOption("i", "input-folder", true, "Input Folder");
+        options.addOption("o", "output-file", true, "Output file");
+
+
+        String inputPath = "";
+        String outputPath = "";
+
+        try {
+            // parse the command line arguments
+            CommandLine line = parser.parse(options, args);
+
+            // validate that block-size has been set
+            if (line.hasOption("i") && line.hasOption("o"))
+            {
+                inputPath = line.getOptionValue("i");
+                outputPath = line.getOptionValue("o");
+            }
+            else
+            {
+                System.out.println("Invalid arguments");
+                System.exit(0);
+            }
+        } catch (ParseException exp) {
+            System.out.println("Unexpected exception:" + exp.getMessage());
+            System.exit(0);
+        }
+
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "word count");
+        Job job = Job.getInstance(conf, "Name-Reference finder");
+
         job.setJarByClass(Main.class);
-        job.setMapperClass(TokenizerMapper.class);
-        job.setCombinerClass(IntSumReducer.class);
-        job.setReducerClass(IntSumReducer.class);
+        job.setInputFormatClass(PDFInputFormat.class);
+        job.setMapperClass(nameRefMapper.class);
+        job.setCombinerClass(nameRefReducer.class);
+        job.setReducerClass(nameRefReducer.class);
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        job.setOutputValueClass(Text.class);
+        FileInputFormat.setInputDirRecursive(job, true);
+        FileInputFormat.addInputPath(job, new Path(inputPath));
+        FileOutputFormat.setOutputPath(job, new Path(outputPath));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
