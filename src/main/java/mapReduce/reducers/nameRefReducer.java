@@ -13,13 +13,15 @@ public class nameRefReducer extends Reducer<Text,Text,Text,Text>
 {
     private Text result = new Text();
 
-    public void reduce(Text key, Iterable<IntWritable> values,
+    public void reduce(Text key, Iterable<Text> values,
                        Context context
     ) throws IOException, InterruptedException {
-        int sum = 0;
-        for (IntWritable val : values) {
-            sum += val.get();
+        String append = "";
+        for (Text val : values)
+        {
+            append = append + val.toString() + ", ";
         }
+        result.set(append);
         context.write(key, result);
     }
 }

@@ -1,6 +1,7 @@
 package utils;
 
 import models.PDF;
+import org.apache.hadoop.mapreduce.Mapper;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,7 +30,7 @@ public class NameFinderTest {
     public void initPDFText() throws Exception
     {
         PDFAnalizer pdfAnalizer = new PDFAnalizer();
-        String path = PDFAnalizerTest.class.getResource("test.pdf").toURI().getPath();
+        String path = ClassLoader.getSystemResource("test.pdf").toURI().getPath();
         pdf = pdfAnalizer.analyzePDF(path);
     }
 
@@ -37,7 +38,9 @@ public class NameFinderTest {
     public void findNamesInPDF() throws Exception
     {
         NameFinder nf = new NameFinder();
-        assertNotEquals(nf.findNamesIn(pdf.getContent().toString()),0);
+        System.out.println(nf.findNamesIn(pdf.getContent().toString()));
+        assertNotEquals(nf.findNamesIn(pdf.getContent().toString()).size(),0);
+
     }
 
 }

@@ -10,8 +10,6 @@ import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
@@ -30,6 +28,7 @@ public class PDFRecordReader extends RecordReader
     private String[] lines = null;
     private LongWritable key = null;
     private Text value = null;
+    private Text title = null;
 
     @Override
     public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext)
@@ -41,7 +40,6 @@ public class PDFRecordReader extends RecordReader
 
         FileSystem fs = file.getFileSystem(job);
         FSDataInputStream fileIn = fs.open(split.getPath());
-
 
         ParseContext pcontext = new ParseContext();
 

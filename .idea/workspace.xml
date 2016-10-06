@@ -7,19 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ef955b-2a15-420b-8347-7197aa22f3bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFInputFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_cli_commons_cli_1_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_cli_commons_cli_1_3_1_jar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/NameFinderTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PDFAnalizerTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/app.iml" afterPath="$PROJECT_DIR$/.idea/modules/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdfRetrival.py" afterPath="$PROJECT_DIR$/pdfRetrival.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" />
@@ -40,6 +33,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/compile/compileIncremental/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/compile/copyResources/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/NameFinder.java" afterPath="$PROJECT_DIR$/src/main/java/utils/NameFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" />
     </list>
     <ignored path="cs441-HW2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,50 +86,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nameRefReducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java">
+      <file leaf-file-name="NameFinder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/NameFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDFInputFormat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFInputFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDFRecordReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
+            <state relative-caret-position="-191">
               <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-596">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nameRefMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,16 +155,19 @@
         <option value="$PROJECT_DIR$/src/main/java/models/PDF.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/PDFAnalizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/nameRefReducer.java" />
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/nameRefMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/inputformats.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFInputFormat.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/NameFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
       </list>
     </option>
   </component>
@@ -305,6 +290,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -405,10 +394,6 @@
               <option name="myItemId" value="mapReduce" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reducers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -437,66 +422,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="readers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs441-HW2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs441-HW2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapReduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mappers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs441-HW2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs441-HW2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapReduce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inputFormats" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -544,7 +469,7 @@
       <recent name="$PROJECT_DIR$/project/project" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PDFAnalizerTest.analyzePDF">
+  <component name="RunManager" selected="JUnit.NameFinderTest.findNamesInPDF">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -1132,16 +1057,16 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PDFAnalizerTest.analyzePDF" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.NameFinderTest.findNamesInPDF" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NameFinderTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NameFinderTest.findNamesInPDF" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.NameFinderTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PDFAnalizerTest.analyzePDF" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.PDFAnalizerTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1475598560136" />
+    <option name="lastUpdateTimestamp" value="1475692136381" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -1199,44 +1124,44 @@
       <workItem from="1474666319541" duration="1556000" />
       <workItem from="1474907962904" duration="1762000" />
       <workItem from="1474994756717" duration="6142000" />
-      <workItem from="1475523109605" duration="5183000" />
+      <workItem from="1475523109605" duration="21286000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NameFinderTest - 2016.09.29 at 11h 33m 59s.xml">
+    <history-entry file="NameFinderTest - 2016.10.05 at 15h 51m 46s.xml">
       <configuration name="NameFinderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NameFinderTest - 2016.09.29 at 11h 40m 41s.xml">
-      <configuration name="NameFinderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NameFinderTest - 2016.09.29 at 11h 56m 56s.xml">
-      <configuration name="NameFinderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NameFinderTest - 2016.09.29 at 11h 57m 39s.xml">
-      <configuration name="NameFinderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NameFinderTest - 2016.09.29 at 12h 00m 08s.xml">
-      <configuration name="NameFinderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.04 at 11h 08m 06s.xml">
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 50m 00s.xml">
       <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PDFAnalizerTest - 2016.09.29 at 11h 07m 49s.xml">
-      <configuration name="PDFAnalizerTest" configurationId="JUnit" />
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 50m 15s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PDFAnalizerTest - 2016.09.29 at 11h 34m 25s.xml">
-      <configuration name="PDFAnalizerTest" configurationId="JUnit" />
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 52m 59s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PDFAnalizerTest_analyzePDF - 2016.10.04 at 12h 17m 29s.xml">
-      <configuration name="PDFAnalizerTest.analyzePDF" configurationId="JUnit" />
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 54m 30s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PDFAnalizerTest_analyzePDF - 2016.10.04 at 12h 18m 34s.xml">
-      <configuration name="PDFAnalizerTest.analyzePDF" configurationId="JUnit" />
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 57m 06s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 15h 59m 52s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 16h 01m 32s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 16h 02m 58s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NameFinderTest_findNamesInPDF - 2016.10.05 at 16h 55m 16s.xml">
+      <configuration name="NameFinderTest.findNamesInPDF" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38194000" />
+    <option name="totallyTimeSpent" value="54297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="23" width="1400" height="779" extended-state="0" />
@@ -1331,39 +1256,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
     <entry file="file://$PROJECT_DIR$/build.sbt" />
     <entry file="file://$PROJECT_DIR$/project/project/assembly.sbt" />
-    <entry file="file://$PROJECT_DIR$/project/plugins.sbt" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/project/build.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/models/PDF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NameFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1376,16 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/PDFAnalizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1394,27 +1281,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java">
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFInputFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/readers/PDFRecordReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
+        <state relative-caret-position="0">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NameFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
           <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1422,23 +1341,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/inputFormats/PDFInputFormat.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="274">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-596">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,2 +1,5 @@
-project/target/*
-target/*
+project/project/target/scala-2.10/
+project/project/target/streams/compile/incCompileSetup/
+project/target/
+target/
+.idea/artifacts/
