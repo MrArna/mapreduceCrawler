@@ -17,6 +17,7 @@ public class nameRefReducer extends Reducer<Text,Text,Text,Text>
                        Context context
     ) throws IOException, InterruptedException {
         String append = "";
+        //concatenate titles of pdfs
         for (Text val : values)
         {
             append = append + val.toString() + ", ";

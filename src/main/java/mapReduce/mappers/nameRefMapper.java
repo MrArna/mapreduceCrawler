@@ -23,13 +23,17 @@ public class nameRefMapper extends Mapper<Object,Text,Text,Text>
             throws IOException, InterruptedException
     {
 
+        //retrieving the cached NLP models
         URI[] localPath = context.getCacheFiles();
 
 
-
+        //retrieving the file name
         InputSplit split = context.getInputSplit();
         Class<? extends InputSplit> splitClass = split.getClass();
 
+        //need to use reflection since the returned type is not file split in case of MultiInputFiles
+        //since it returns TaggedInputSplits
+        //this is a bug in hadoop...
         FileSplit fileSplit = null;
         if (splitClass.equals(FileSplit.class)) {
             fileSplit = (FileSplit) split;
@@ -50,11 +54,12 @@ public class nameRefMapper extends Mapper<Object,Text,Text,Text>
             // end reflection hackery
         }
 
-
-
+        //set the title
         title.set(fileSplit.getPath().getName());
+        //instantiate the parser with the retrieved NLP models
         NameFinder nf = new NameFinder(localPath);
 
+        //create <key,value> pairs and then send them
         for(String n : nf.findNamesIn(value.toString()))
         {
             System.out.println(" mapper output -> <" + name.toString() + "," + title.toString() + ">");

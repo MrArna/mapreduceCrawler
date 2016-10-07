@@ -39,15 +39,15 @@ text = "FPGA"
 try:
   opts, args = getopt.getopt(sys.argv[1:],"ha:y:t:",["author=","year=","text="])
 except getopt.GetoptError:
-  print ('pdfRetrival.py [-t <author>] [-s <year>] [-b <text>]')
+  print ('pdfRetrival.py [-a <author>] [-y <year>] [-b <text>]')
   sys.exit(2)
 for opt, arg in opts:
   if opt == '-h':
-     print ("pdfRetrival.py [-t <toaddr>] [-s <subject>] [-b <body>]")
+     print ('pdfRetrival.py [-a <author>] [-y <year>] [-b <text>]')
      sys.exit()
-  elif opt in ("-t", "--author"):
+  elif opt in ("-a", "--author"):
      author = arg
-  elif opt in ("-s", "--year"):
+  elif opt in ("-y", "--year"):
      year = arg
   elif opt in ("-b", "--text"):
      text = arg

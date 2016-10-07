@@ -17,6 +17,7 @@ public class PDFInputFormat extends FileInputFormat {
     public RecordReader createRecordReader(InputSplit inputSplit, TaskAttemptContext taskAttemptContext)
             throws IOException, InterruptedException
     {
+        //return a reader for the PDF
         return new PDFRecordReader();
     }
 }

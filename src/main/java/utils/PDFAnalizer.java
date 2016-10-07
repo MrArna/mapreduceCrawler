@@ -23,6 +23,8 @@ public class PDFAnalizer
         super();
     }
 
+
+    //exploit Tika
     public PDF analyzePDF(String path) throws TikaException, SAXException, IOException
     {
         BodyContentHandler handler = new BodyContentHandler();

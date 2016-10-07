@@ -21,6 +21,7 @@ public class Main {
 
         Configuration conf = new Configuration();
 
+        //check the args
         GenericOptionsParser optionParser = new GenericOptionsParser(conf, args);
         String[] remainingArgs = optionParser.getRemainingArgs();
         if (remainingArgs.length != 2)
@@ -34,6 +35,7 @@ public class Main {
 
         Job job = Job.getInstance(conf, "Name-Reference finder");
 
+        //cache the NLP models fot the mappers
         job.addCacheFile(Main.class.getResource("en-token.bin").toURI());
         job.addCacheFile(Main.class.getResource("en-ner-person.bin").toURI());
         job.addCacheFile(Main.class.getResource("es-ner-person.bin").toURI());
@@ -41,7 +43,7 @@ public class Main {
         job.addCacheFile(Main.class.getResource("nl-ner-person.bin").toURI());
 
 
-
+        //set mapper, reducers and input formats
         job.setJarByClass(Main.class);
         job.setInputFormatClass(PDFInputFormat.class);
         //job.setMapperClass(nameRefMapper.class);
@@ -50,7 +52,7 @@ public class Main {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-
+        //add all the pdf files in the given directory ad path inputs to the mapper
         Path inPath = new Path(inputPath);
         FileSystem fs = FileSystem.get(conf);
         FileStatus status = fs.getFileStatus(inPath);
@@ -68,6 +70,7 @@ public class Main {
                         );
             }
         }
+        //set output
         FileOutputFormat.setOutputPath(job, new Path(outputPath));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }

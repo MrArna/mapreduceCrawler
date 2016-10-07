@@ -28,27 +28,27 @@ public class PDFRecordReader extends RecordReader
     private String[] lines = null;
     private LongWritable key = null;
     private Text value = null;
-    private Text title = null;
 
     @Override
     public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext)
             throws IOException, InterruptedException
     {
+        //get the file
         FileSplit split = (FileSplit) inputSplit;
         Configuration job = taskAttemptContext.getConfiguration();
         final Path file = split.getPath();
-
         FileSystem fs = file.getFileSystem(job);
         FSDataInputStream fileIn = fs.open(split.getPath());
 
         ParseContext pcontext = new ParseContext();
-
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
-        //parsing the document using models.PDF parser
+
+        //parsing the document using parser
         PDFParser pdfparser = new PDFParser();
         try {
             pdfparser.parse(fileIn, handler, metadata,pcontext);
+            //add lines to the list
             this.lines = handler.toString().split("\n");
         } catch (SAXException e) {
             e.printStackTrace();
@@ -57,6 +57,10 @@ public class PDFRecordReader extends RecordReader
         }
     }
 
+
+    //in charge to check if new chunk of data are available to be passed to the mapper
+    //update the key (increase the line number)
+    //update the current value to be passed to the mapper
     @Override
     public boolean nextKeyValue() throws IOException, InterruptedException
     {
@@ -85,12 +89,14 @@ public class PDFRecordReader extends RecordReader
         }
     }
 
+    //the key is the line number
     @Override
     public Object getCurrentKey() throws IOException, InterruptedException
     {
         return key;
     }
 
+    //the value passed to the mapper is the line
     @Override
     public Object getCurrentValue() throws IOException, InterruptedException
     {
