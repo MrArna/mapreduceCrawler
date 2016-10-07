@@ -6,32 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ef955b-2a15-420b-8347-7197aa22f3bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-docs.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-optional.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-plugin.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-pom.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-provided.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-sources.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" afterPath="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
-    </list>
+    <list default="true" id="10ef955b-2a15-420b-8347-7197aa22f3bf" name="Default" comment="" />
     <ignored path="cs441-HW2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -957,7 +932,7 @@
       <workItem from="1474666319541" duration="1556000" />
       <workItem from="1474907962904" duration="1762000" />
       <workItem from="1474994756717" duration="6142000" />
-      <workItem from="1475523109605" duration="24140000" />
+      <workItem from="1475523109605" duration="24717000" />
     </task>
     <servers />
   </component>
@@ -994,10 +969,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57151000" />
+    <option name="totallyTimeSpent" value="57728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="23" width="1400" height="779" extended-state="0" />
+    <frame x="31" y="23" width="1400" height="779" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
