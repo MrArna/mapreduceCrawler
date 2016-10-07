@@ -58,6 +58,8 @@ Then, via terminal, navigate till the folder where the script file is located in
 
 If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download an internet connection via a proxy server that provide access to the IEEEexplorer website is required (e.g. access trough the UIC network).
 
+![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
+
 #####Application
 To use the application, first of all create your own folder in the HDFS, by typing the following command in your Hadoop configured environment:
 
