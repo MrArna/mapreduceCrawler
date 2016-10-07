@@ -4,7 +4,7 @@
 		module="cs441-hw2-build-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20161005132916"
+		publication="20161006191858"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

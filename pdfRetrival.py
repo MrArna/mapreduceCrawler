@@ -34,22 +34,24 @@ def download_file(id):
 author = "Santambrogio"
 year = "2016"
 text = "FPGA"
-
+n = 10
 
 try:
-  opts, args = getopt.getopt(sys.argv[1:],"ha:y:t:",["author=","year=","text="])
+  opts, args = getopt.getopt(sys.argv[1:],"hn:a:y:t:",["number=","author=","year=","text="])
 except getopt.GetoptError:
-  print ('pdfRetrival.py [-a <author>] [-y <year>] [-b <text>]')
+  print ('pdfRetrival.py [-n <number>] [-a <author>] [-y <year>] [-t <text>]')
   sys.exit(2)
 for opt, arg in opts:
   if opt == '-h':
-     print ('pdfRetrival.py [-a <author>] [-y <year>] [-b <text>]')
+     print ('pdfRetrival.py [-n <number>] [-a <author>] [-y <year>] [-t <text>]')
      sys.exit()
+  elif opt in ("-n", "--number"):
+     n = int(arg)
   elif opt in ("-a", "--author"):
      author = arg
   elif opt in ("-y", "--year"):
      year = arg
-  elif opt in ("-b", "--text"):
+  elif opt in ("-t", "--text"):
      text = arg
 
 
@@ -61,3 +63,6 @@ for doc in root.findall("document"):
 	print(doc.find("title").text)
 	#print(doc.find("doi").text)
 	download_file(doc.find("arnumber").text)
+	count = count + 1
+	if (count == n):
+		break

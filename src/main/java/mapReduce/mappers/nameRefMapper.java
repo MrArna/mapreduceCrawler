@@ -62,9 +62,12 @@ public class nameRefMapper extends Mapper<Object,Text,Text,Text>
         //create <key,value> pairs and then send them
         for(String n : nf.findNamesIn(value.toString()))
         {
-            System.out.println(" mapper output -> <" + name.toString() + "," + title.toString() + ">");
-            name.set(n);
-            context.write(name, title);
+            //System.out.println(" mapper output -> <" + name.toString() + "," + title.toString() + ">");
+            if(!n.equals(" ") && !n.equals(""))
+            {
+                name.set(n);
+                context.write(name, title);
+            }
         }
     }
 }

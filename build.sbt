@@ -1,6 +1,6 @@
 lazy val commonSettings = Seq(
   organization := "edu.uic",
-  version := "0.1.0"
+  version := "final"
 )
 
 mainClass in (Compile, run) := Some("Main")
@@ -22,7 +22,7 @@ libraryDependencies += "commons-cli" % "commons-cli" % "1.3.1"
 lazy val app = (project in file(".")).
   settings(commonSettings: _*).
   settings(
-    name := "cs441-HW2"
+    name := "nameFinder-Arnaboldi"
   ).
   enablePlugins(AssemblyPlugin)
 
