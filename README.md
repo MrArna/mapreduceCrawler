@@ -69,7 +69,7 @@ After that load the files from local to the HDFS, in the created folder, by typi
 
 At this point launch the jar, by typing:
 
-`hadoop jar /path/to/the/jar /path/to/the/hdfs/input/folder /path/to/output/folder`
+`hadoop jar nameFinder-Arnaboldi-assembly-final.jar /path/to/the/jar /path/to/the/hdfs/input/folder /path/to/output/folder`
 
 The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically.
 
