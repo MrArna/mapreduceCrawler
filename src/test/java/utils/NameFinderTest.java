@@ -30,7 +30,7 @@ public class NameFinderTest {
     public void initPDFText() throws Exception
     {
         PDFAnalizer pdfAnalizer = new PDFAnalizer();
-        String path = ClassLoader.getSystemResource("test.pdf").toURI().getPath();
+        String path = NameFinderTest.class.getResource("/test.pdf").toURI().getPath();
         pdf = pdfAnalizer.analyzePDF(path);
     }
 

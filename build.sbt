@@ -1,5 +1,4 @@
 lazy val commonSettings = Seq(
-  organization := "edu.uic",
   version := "final"
 )
 
@@ -17,6 +16,8 @@ libraryDependencies += "org.apache.tika" % "tika-java7" % "1.13"
 libraryDependencies += "org.apache.opennlp" % "opennlp-maxent" % "3.0.3"
 libraryDependencies += "org.apache.hadoop" % "hadoop-kafka" % "3.0.0-alpha1"
 libraryDependencies += "commons-cli" % "commons-cli" % "1.3.1"
+libraryDependencies += "junit" % "junit" % "4.12"
+libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
 
 
 lazy val app = (project in file(".")).

@@ -80,7 +80,6 @@
     <orderEntry type="library" name="SBT: javax.xml.bind:jaxb-api:2.2.2:jar" level="project" />
     <orderEntry type="library" name="SBT: javax.xml.stream:stax-api:1.0-2:jar" level="project" />
     <orderEntry type="library" name="SBT: joda-time:joda-time:2.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: junit:junit:4.11:jar" level="project" />
     <orderEntry type="library" name="SBT: log4j:log4j:1.2.17:jar" level="project" />
     <orderEntry type="library" name="SBT: net.java.dev.jets3t:jets3t:0.9.0:jar" level="project" />
     <orderEntry type="library" name="SBT: net.java.dev.jna:jna:4.1.0:jar" level="project" />
@@ -196,5 +195,8 @@
     <orderEntry type="library" name="SBT: org.apache.hadoop:hadoop-yarn-common:3.0.0-alpha1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-jaxrs:1.9.13:jar" level="project" />
     <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-xc:1.9.13:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: com.novocode:junit-interface:0.11:jar" level="project" />
+    <orderEntry type="library" name="SBT: junit:junit:4.12:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-sbt:test-interface:1.0:jar" level="project" />
   </component>
 </module>
