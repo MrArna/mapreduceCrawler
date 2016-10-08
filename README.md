@@ -73,19 +73,19 @@ At this point launch the jar, by typing:
 
 The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically. 
 
-![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
-
 #Test
 ----------------
 The tests were ran locally for what concerns utils and model classes, instead the test for the the MapReduce classes were ran in a Hortonworks Sandbox VM version 2.7.
 
 ##### JUnit
-Automated tests with JUnit were made for utils and the model classes. Using a a test example PDF in resources.
+Automated tests with JUnit were made for utils and the model classes. Using a a test example PDF in resources. The classes in *Utils* and *Models* classes were tested in this way, in order to familiarize with the Tika and OpenNLP libraries and to check that chaining the provided functionalities will provide a corrected an expected behavior.
 
 
 ##### Other tests
 The testing was made in a Hortonworks Sandbox VM version 2.7, with Hadoop and MapReduce already configured.
 A bunch of pdfs was downloaded by internet, loaded into the HDFS and then the application were ran over those pdfs. The PDFs used for the test can be found in the root of these repository. And the expected output should be as in image.
+
+![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
 
 #Acknowledgments
 ---------------
