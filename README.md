@@ -51,12 +51,12 @@ The application runs in a distributed Hadoop MapReduce environment. Given a set 
 ----------------
 
 ######Script
-To use the scripts check that python3 is installed and the required modules are also installed via pip, also "wget" should be installed.
+To use the scripts check that python3 is installed and the required modules are also installed via pip, also "wget" should be installed as terminal command.
 Then, via terminal, navigate till the folder where the script file is located in your machine and type the following:
 
 `python3 pdfRetrival.py [-a<author>] [-y<year>] [-b<text>]`
 
-If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download an internet connection via a proxy server that provide access to the IEEEexplorer website is required (e.g. access trough the UIC network).
+If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download from [IEEEXplorer](http://ieeexplore.ieee.org/Xplore/home.jsp) an internet connection via a proxy server that provide access to the IEEEXplorer website is required (e.g. access trough the UIC network).
 
 ![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
 
@@ -65,7 +65,7 @@ To use the application, first of all create your own folder in the HDFS, by typi
 
 `hadoop fs -mkdir /dir/path/`
 
-After that load the files from local to the HDFS, in the created folder, by typing:
+After that, load the files from local to the HDFS, in the created folder, by typing:
 
 `hadoop fs -copyFromLocal /path/of/your/pdf/files/*.pdf /path/to/the/just/created/folder`
 
@@ -73,7 +73,7 @@ At this point launch the jar, by typing:
 
 `hadoop jar nameFinder-Arnaboldi-assembly-final.jar /path/to/the/jar /path/to/the/hdfs/input/folder /path/to/output/folder`
 
-The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically.
+The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically. 
 
 
 #Test
