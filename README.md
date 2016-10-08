@@ -13,7 +13,7 @@ Your implementation should include the following steps. You will provide a scrip
 -----------------
 
 ######Script
-The script to retrive pdf from the web was developed using python3, exploiting the [IEEE APIs](http://ieeexplore.ieee.org/gateway/) in order to retrieve the papers. It also exploits the "wget" functionality provided by the OS, hence corresponding command and the python module used by the script should be installed in the system before using it. 
+The script to retrive pdf from the web was developed using python3, exploiting the [IEEE APIs](http://ieeexplore.ieee.org/gateway/) in order to retrieve the papers. It also exploits the "wget" CLI functionality provided by the OS, hence corresponding command and the python modules used by the script should be installed in the system before using it. 
 
 ######Application
 The application was developed with with IntelliJIDEA IDE for a distributed environment where Hadoop and MapReduce are installed and configured. SBT was also exploited in order to manage the libraries and to create a fat jar containing all the needed jars and also the name finder pertained models. In particular it was developed using the following environment: the Hortonworks SandBox VM, hosted via VMWARE in a OS X 10 native environment.
