@@ -26,7 +26,7 @@ public class Main {
         String[] remainingArgs = optionParser.getRemainingArgs();
         if (remainingArgs.length != 2)
         {
-            System.err.println("Usage: jar <in> <out>");
+            System.err.println("Usage: nameFinder <in> <out>");
             System.exit(2);
         }
 

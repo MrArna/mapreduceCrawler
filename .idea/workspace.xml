@@ -7,32 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ef955b-2a15-420b-8347-7197aa22f3bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_novocode_junit_interface_0_11_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_sbt_test_interface_1_0_jar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_11_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_12_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/app-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/app-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/app.iml" afterPath="$PROJECT_DIR$/.idea/modules/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/default/cs441-hw2-build-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-docs.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-optional.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-plugin.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-pom.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-provided.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-sources.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test.xml" afterPath="$PROJECT_DIR$/project/project/target/resolution-cache/reports/default-cs441-hw2-build-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="cs441-HW2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,22 +57,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PDFAnalizerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NameFinderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,11 +114,11 @@
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/reducers/nameRefReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/NameFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/PDFAnalizer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapReduce/mappers/nameRefMapper.java" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/test/java/utils/PDFAnalizerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -161,8 +129,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="23" />
+    <option name="x" value="190" />
+    <option name="y" value="139" />
     <option name="width" value="1400" />
     <option name="height" value="779" />
   </component>
@@ -225,8 +193,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="nameFinder-Arnaboldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs441-HW2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,29 +226,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nameFinder-Arnaboldi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs441-HW2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -969,7 +933,7 @@
       <workItem from="1474666319541" duration="1556000" />
       <workItem from="1474907962904" duration="1762000" />
       <workItem from="1474994756717" duration="6142000" />
-      <workItem from="1475523109605" duration="27086000" />
+      <workItem from="1475523109605" duration="27555000" />
     </task>
     <servers />
   </component>
@@ -1006,10 +970,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60097000" />
+    <option name="totallyTimeSpent" value="60566000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="23" width="1400" height="779" extended-state="0" />
+    <frame x="190" y="139" width="1400" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1023,7 +987,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.4857143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.4857143" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1159,7 +1123,7 @@
         <state relative-caret-position="409">
           <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1169,16 +1133,6 @@
         <state relative-caret-position="148">
           <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,10 +1152,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1214,11 +1168,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/NameFinderTest.java">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
