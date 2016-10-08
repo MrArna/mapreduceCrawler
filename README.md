@@ -89,4 +89,4 @@ A bunch of pdfs was downloaded by internet, loaded into the HDFS and then the ap
 
 #Acknowledgments
 ---------------
-Some inspiration was taken by the [Hortonwork Hadoop Tutorial](http://it.hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/), [Tika Tutorial](http://tika.apache.org/1.13/examples.html) and [OpenNLP Tutoria](http://www.programcreek.com/2012/05/opennlp-tutorial/). The code was rewritten and readapted in order to implement the described functionalities.
+Some inspiration was taken by the [Hortonwork Hadoop Tutorial](http://it.hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/), [Tika Tutorial](http://tika.apache.org/1.13/examples.html) and [OpenNLP Tutorial](http://www.programcreek.com/2012/05/opennlp-tutorial/). The code was rewritten and readapted in order to implement the described functionalities.
