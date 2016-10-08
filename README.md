@@ -54,7 +54,7 @@ The application runs in a distributed Hadoop MapReduce environment. Given a set 
 To use the scripts check that python3 is installed and the required modules are also installed via pip, also "wget" should be installed as terminal command.
 Then, via terminal, navigate till the folder where the script file is located in your machine and type the following:
 
-`python3 pdfRetrival.py [-a<author>] [-y<year>] [-b<text>]`
+`python3 pdfRetrival.py [-n <numberOfPDFs>] [-a <author>] [-y <year>] [-t <text>]`
 
 If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download from [IEEEXplorer](http://ieeexplore.ieee.org/Xplore/home.jsp) an internet connection via a proxy server that provide access to the IEEEXplorer website is required (e.g. access trough the UIC network).
 
