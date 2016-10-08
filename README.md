@@ -13,7 +13,7 @@ Your implementation should include the following steps. You will provide a scrip
 -----------------
 
 ######Script
-The script to retrive pdf from the web was developed using python3, exploiting the [IEEE APIs](http://ieeexplore.ieee.org/gateway/) in order to retrieve the papers. It also exploits the "wget" functionality provided by the OS, hence corresponding command and the python module used by the script should be installed in the system before using it. 
+The script to retrive pdf from the web was developed using python3, exploiting the [IEEE APIs](http://ieeexplore.ieee.org/gateway/) in order to retrieve the papers. It also exploits the "wget" CLI functionality provided by the OS, hence corresponding command and the python modules used by the script should be installed in the system before using it. 
 
 ######Application
 The application was developed with with IntelliJIDEA IDE for a distributed environment where Hadoop and MapReduce are installed and configured. SBT was also exploited in order to manage the libraries and to create a fat jar containing all the needed jars and also the name finder pertained models. In particular it was developed using the following environment: the Hortonworks SandBox VM, hosted via VMWARE in a OS X 10 native environment.
@@ -51,19 +51,19 @@ The application runs in a distributed Hadoop MapReduce environment. Given a set 
 ----------------
 
 ######Script
-To use the scripts check that python3 is installed and the required modules are also installed via pip, also "wget" should be installed.
+To use the scripts check that python3 is installed and the required modules are also installed via pip, also "wget" should be installed as terminal command.
 Then, via terminal, navigate till the folder where the script file is located in your machine and type the following:
 
-`python3 pdfRetrival.py [-a<author>] [-y<year>] [-b<text>]`
+`python3 pdfRetrival.py [-n <numberOfPDFs>] [-a <author>] [-y <year>] [-t <text>]`
 
-If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download an internet connection via a proxy server that provide access to the IEEEexplorer website is required (e.g. access trough the UIC network).
+If the parameters are not passed, the script runs with hardcoded values. The PDFs are saved in the same folder of the scripts. Since IEEE PDFs are download from [IEEEXplorer](http://ieeexplore.ieee.org/Xplore/home.jsp) an internet connection via a proxy server that provide access to the IEEEXplorer website is required (e.g. access trough the UIC network).
 
 #####Application
 To use the application, first of all create your own folder in the HDFS, by typing the following command in your Hadoop configured environment:
 
 `hadoop fs -mkdir /dir/path/`
 
-After that load the files from local to the HDFS, in the created folder, by typing:
+After that, load the files from local to the HDFS, in the created folder, by typing:
 
 `hadoop fs -copyFromLocal /path/of/your/pdf/files/*.pdf /path/to/the/just/created/folder`
 
@@ -71,21 +71,22 @@ At this point launch the jar, by typing:
 
 `hadoop jar nameFinder-Arnaboldi-assembly-final.jar /path/to/the/jar /path/to/the/hdfs/input/folder /path/to/output/folder`
 
-The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically.
-
+The output of the application will be in the given output folder, that should not exist prior the computation. It will be created automatically. 
 
 #Test
 ----------------
 The tests were ran locally for what concerns utils and model classes, instead the test for the the MapReduce classes were ran in a Hortonworks Sandbox VM version 2.7.
 
 ##### JUnit
-Automated tests with JUnit were made for utils and the model classes. Using a a test example PDF in resources.
+Automated tests with JUnit were made for utils and the model classes. Using a a test example PDF in resources. The classes in *Utils* and *Models* classes were tested in this way, in order to familiarize with the Tika and OpenNLP libraries and to check that chaining the provided functionalities will provide a corrected an expected behavior.
 
 
 ##### Other tests
 The testing was made in a Hortonworks Sandbox VM version 2.7, with Hadoop and MapReduce already configured.
 A bunch of pdfs was downloaded by internet, loaded into the HDFS and then the application were ran over those pdfs. The PDFs used for the test can be found in the root of these repository. And the expected output should be as in image.
 
+![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
+
 #Acknowledgments
 ---------------
-Some inspiration was taken by the [Hortonwork Hadoop Tutorial](http://it.hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/), [Tika Tutorial](http://tika.apache.org/1.13/examples.html) and [OpenNLP Tutoria](http://www.programcreek.com/2012/05/opennlp-tutorial/). The code was rewritten and readapted in order to implement the described functionalities.
+Some inspiration was taken by the [Hortonwork Hadoop Tutorial](http://it.hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/), [Tika Tutorial](http://tika.apache.org/1.13/examples.html) and [OpenNLP Tutorial](http://www.programcreek.com/2012/05/opennlp-tutorial/). The code was rewritten and readapted in order to implement the described functionalities.
