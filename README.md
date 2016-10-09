@@ -83,7 +83,7 @@ Automated tests with JUnit were made for utils and the model classes. Using a a 
 
 ##### Other tests
 The testing was made in a Hortonworks Sandbox VM version 2.7, with Hadoop and MapReduce already configured.
-A bunch of pdfs was downloaded by internet, loaded into the HDFS and then the application were ran over those pdfs. The PDFs used for the test can be found in the root of these repository. And the expected output should be as in image.
+A bunch of pdfs was downloaded by internet, loaded into the HDFS and then the application were ran over those pdfs. The PDFs used for the test can be found in the root of these repository. And the expected output should be as in image. I've noticed that the sharding phase took a while before the mappers could start working, it depends on how many files are analyzed and how is performing the VM. 
 
 ![Alt text](https://bytebucket.org/MrArnab/marco_arnaboldi_cs441hw2/raw/60cd363c905e4bb599c1ea7b33d44850f17d9006/images/output.png?token=62f864d24a0b3ad59e5801a9d35538d3df8fe4eb)
 

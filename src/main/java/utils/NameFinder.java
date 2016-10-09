@@ -121,7 +121,7 @@ public class NameFinder
         }
         catch (Exception ex)
         {
-            System.out.println(tokenModelPAth);
+            System.out.println("Error loading: " + tokenModelPAth);
         }
         finally
         {
