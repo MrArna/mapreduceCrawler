@@ -63,7 +63,7 @@ To use the application, first of all create your own folder in the HDFS, by typi
 
 `hadoop fs -mkdir /dir/path/`
 
-After that, load the files from local to the HDFS, in the created folder, by typing:
+The folder should contain onlu PDF files. After that, load the files from local to the HDFS, in the created folder, by typing:
 
 `hadoop fs -copyFromLocal /path/of/your/pdf/files/*.pdf /path/to/the/just/created/folder`
 
